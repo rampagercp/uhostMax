@@ -34,7 +34,7 @@ main {
   left: 0;
   background: #2ddf5c;
   padding: 0.5rem 1rem;
-  z-index: 1;
+  z-index: 60;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -154,12 +154,16 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .main-footer__link {
-  display: block;
-  margin: 1rem 0;
+  /* display: block; */
+  margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -187,9 +191,13 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -236,5 +244,9 @@ main {
   .main-footer__link {
     display: inline-block;
     margin: 0 1rem;
+  }
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
   }
 }
